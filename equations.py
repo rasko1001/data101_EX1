@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+# coding = utf-8
 # a func that's check what the sign of the result 
 # if the base is negative and the power is float
 # * check if difine under the power if not return 0
@@ -172,7 +172,7 @@ def power(x, y):
     while i < y:
         t = t*x
         i = i + 1
-     
+        
     
     return t
         
@@ -192,7 +192,7 @@ def abs(x):
     return x
 
 #print(XtimesY(-2.2, -2))
-#print(calculate(0))
+#print(calculate(-1))
 #print(Ln(1.5))
 #print(sqrt(2.5, 4))
 #print(sqrt(7, -exponent(1)))
