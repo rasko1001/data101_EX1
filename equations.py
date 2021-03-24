@@ -97,7 +97,7 @@ def XtimesY(x, y):
             neg = -1
             
         x = abs(x)
-        t = y * ln(x)
+        t = y * Ln(x)
         t = exponent(t)
         
        
@@ -126,7 +126,7 @@ def calculate(x):
     return round(exponent(x) * XtimesY(7, x) * XtimesY(x, -1) * sqrt(x, x), 6)
 
 
-def ln(x):  
+def Ln(x):  
     try:    
         y = x - 1
         y1 = 0
@@ -193,12 +193,12 @@ def abs(x):
 
 #print(XtimesY(-2.5, 3))
 #print(calculate(9))
-#print(ln(-0.2))
+#print(Ln(-0.2))
 #print(sqrt(3, -2))
 #print(sqrt(7, -exponent(1)))
-print(exponent(710))
+#print(exponent(710))
 #print(len(str(1/7)))
 #print(XtimesY(-exponent(1), 1/7))
 #print(sqrt(6, -sqrt(2, 2)))
-print(exponent(-5))
-print(factorial(4))
+#print(exponent(-5))
+#print(factorial(4))
