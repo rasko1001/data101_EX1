@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+"""
+Created on Thu Mar 25 21:59:12 2021
+
+
+@author: Noam
+"""
+# -*- coding: utf-8 -*-
 # coding = utf-8
 # a func that's check what the sign of the result 
 # if the base is negative and the power is float
@@ -78,6 +85,11 @@ def negative(x):
  
 def XtimesY(x, y):
     try:
+         #ugly code:
+        if x <= 0:
+            return 0
+        
+        #real code
         if x == 0:
             return 0
         
@@ -110,6 +122,11 @@ def XtimesY(x, y):
 
 def sqrt(x, y):
     try:
+        #ugly code:
+        if y <= 0:
+            return 0
+        
+        #real code
         if y == 0:
             return 0
         
@@ -122,12 +139,22 @@ def sqrt(x, y):
         return 0
     
 def calculate(x):
+    #ugly code:
+    if x <= 0:
+        return 0
+    
+    #real code
     #print(exponent(x), XtimesY(7, x), XtimesY(x, -1), sqrt(x, x))
     return round(exponent(x) * XtimesY(7, x) * XtimesY(x, -1) * sqrt(x, x), 6)
 
 
 def Ln(x):  
-    try:    
+    try:
+        #ugly code:
+        if x <= 0:
+            return 0
+        
+        #real code
         y = 0
         y1 = y + 2 * ((x - exponent(y)) / (x + exponent(y)))
         #i = 0
@@ -202,3 +229,5 @@ def abs(x):
 #print(sqrt(6, -sqrt(2, 2)))
 #print(exponent(-5))
 #print(factorial(4))
+
+
